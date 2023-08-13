@@ -6,6 +6,9 @@ import projImg3 from "../assets/img/buscapapa.png";
 import projImg4 from "../assets/img/app.png";
 import projImg5 from "../assets/img/calculator.png";
 import projImg6 from "../assets/img/slow.png";
+import projImg7 from "../assets/img/project-img2.png";
+
+import projImg8 from "../assets/img/skullmap.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -38,6 +41,12 @@ export const Projects = () => {
       link: 'https://github.com/lusanchezmo/buscapapa/',
     },
     {
+      title: "skullMap",
+      description: "Videojuego de carrera de calaveras",
+      imgUrl: projImg8,
+      link: 'https://lusanchezmo.github.io/skullMap/',
+    },
+    {
       title: "Training for gym",
       description: "Aplicación movil de rutinas para gimnacio",
       imgUrl: projImg4,
@@ -52,7 +61,7 @@ export const Projects = () => {
     {
       title: "Proyectos",
       description: "Muchos mas proyectos mas en el siguiente link",
-      imgUrl: '',
+      imgUrl: projImg7,
       link: 'https://github.com/lusanchezmo?tab=repositories',
     },
     
@@ -67,19 +76,9 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Proyectos desarrollados a lo largo de mi carrera universitaria</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
+                  
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>

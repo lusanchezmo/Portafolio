@@ -58,7 +58,7 @@ export const Banner = () => {
                 <span className="tagline">Bienvenid@ a mi portafolio</span>
                 <h1>{`Hola! Soy Luis Daniel `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "desarrollador Front-end", "Diseñador web", "Desarrollador Backend" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Estudiante de Ingeniería de Sistemas y computación de la Universidad Nacional de Colombia, soy un apasionado desarrollador de software. Amo crear, investigar y solucionar problemas del mundo actual con la programación, busco cada día ser mejor que antes y me encanta trabajar equipo para crear soluciones innovadoras juntos.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  
               </div>}
             </TrackVisibility>
           </Col>
